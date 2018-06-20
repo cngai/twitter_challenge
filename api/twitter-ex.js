@@ -3,11 +3,12 @@ var config = require('./config');
 var T = new Twit(config);	//object of twit
 
 var params = {
-	q: 'akshay',
-	count: 1
+	screen_name: 'yousadirtybum',
+	count: 1,
+	include_rts: false
 }
 
-T.get('search/tweets', params, searchedData);
+T.get('statuses/user_timeline', params, searchedData);
 
 function searchedData(err, data, response){
 	console.log(data);
