@@ -1,13 +1,11 @@
 var tla = angular.module('twitterLittleApp', ['ngAnimate'])
 
 tla.service('tService', function($http){
-	return {
-		getLandingPage: function() {
-			return $http.get('/');
-		},
-		getTweets: function(username) {
-			return $http.post('/tweets/', username);
-		}
+	this.getLandingPage = function() {
+		return $http.get('/');
+	},
+	this.getTweets = function(username) {
+		return $http.post('/tweets/', username);
 	};
 });
 
