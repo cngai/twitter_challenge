@@ -7,9 +7,9 @@ module.exports = {
 	    T.get('statuses/user_timeline', {screen_name: req.body.handle, count: 15}, function(err, data, response){
 	    	/*if(!error){
 	    		console.log(data);
-	    	}
-	    	console.log("Response: " + JSON.stringify(response));
-	    	console.log(JSON.stringify(data));*/
+	    	}*/
+	    	//console.log("Response: " + JSON.stringify(response));
+	    	console.log(JSON.stringify(data));
 
 	    	//data parsed as JSON object
 	    	res.json(data);		//send json object
