@@ -19,8 +19,10 @@ tla.controller('controller', function($scope, $http, tService) {
 	// get the tweets
 	$scope.searchTweets = function() {
 		tService.getTweets($scope.username)
-			.success(function(data) {
-				$scope.tweets = JSON.parse(JSON.stringify(data));
+		//parsed json data is now in 'data' variable
+		//success callback function
+			.success(function(obj) {
+				$scope.tweets = obj;
 			});
 	}
 });
