@@ -7,25 +7,24 @@ body {
 	/*border:1px solid red;*/
 }
 
-.parent {
+.title {
 	position: relative;
 	bottom: 150px;
 }
 
-.title1 {
-	text-align: center;
+.twitter-title {
 	font-size: 90px;
 	font-style: italic;
-	font-family: "Georgia", Times, serif;
+	font-family: Georgia, Times, serif;
 	font-weight: 600;
 	color: #153c5d;
 	margin-bottom: 0;
 }
 
-.title2 {
+.searcher-title {
 	font-size: 75px;
 	font-style: italic;
-	font-family: "Georgia", Times, serif;
+	font-family: Georgia, Times, serif;
 	font-weight: 600;
 	color: #153c5d;
 	line-height: 5%;
@@ -37,4 +36,19 @@ body {
 	position: relative;
 	top: 15px;
 	right: 310px;
+}
+
+.instructions {
+	position: relative;
+	bottom: 110px;
+}
+
+.description {
+	font-size: 15px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #b62a37;
+	font-weight: 400;
+	letter-spacing: 5px;
+	word-spacing: 3px;
+	line-height: 40%;
 }
