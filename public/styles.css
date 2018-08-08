@@ -52,3 +52,24 @@ body {
 	word-spacing: 3px;
 	line-height: 40%;
 }
+
+.searchBar {
+	margin: auto;
+  	left: 0px;
+  	right: 0px;
+  	bottom: 100px;
+	width: 460px;
+}
+
+.searchButton{
+	background-color: #c7ced5;
+}
+
+.buttonIcon {
+	height: 25px;
+	width: 25px;
+}
+
+.form-control::-webkit-input-placeholder{
+	color: #153c5d;
+}
