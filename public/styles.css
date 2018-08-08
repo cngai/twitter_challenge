@@ -4,7 +4,7 @@ body {
 
 .header {
 	text-align: center;
-	border:1px solid red;
+	/* border: 1px solid red; */
 }
 
 .title {
@@ -73,4 +73,23 @@ body {
 .form-control::-webkit-input-placeholder{
 	color: #153c5d;
 	font-style: italic;
+}
+
+.tweetInfo {
+	margin: auto;
+    width: 45%;
+    border: 1px solid red;
+}
+
+/* ngAnimate animations */
+.tweetInfo.ng-enter {
+  transition: 1s linear all;
+  opacity:0;
+}
+.tweetInfo.ng-enter-stagger {
+  transition-delay: 0.1s;
+  transition-duration: 0s;
+}
+.tweetInfo.ng-enter.ng-enter-active {
+  opacity:1;
 }

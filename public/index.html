@@ -45,13 +45,13 @@
 		</div>
 
 		<!-- tweets -->
-		<div class = "row one_tweet" ng-repeat = "tweet in tweets" ng-animate="{enter: 'tweet-enter'}">
-					<img ng-src='{{tweet.user.profile_image_url}}'></img>
-					<h3>{{tweet.user.name}}</h3>
-					
-					<p ng-bind="tweet.text"></p>
-					<p>{{tweet.created_at}}</p>
-					<p> <span class="fa fa-heart"></span> {{tweet.favorite_count}} <span class="fa fa-retweet"></span> {{tweet.retweet_count}} retweets</p>
+		<div class = "row tweetInfo" ng-repeat = "tweet in tweets">
+			<img ng-src='{{tweet.user.profile_image_url}}'></img>
+			<h3>{{tweet.user.name}}</h3>
+			
+			<p ng-bind="tweet.text"></p>
+			<p>{{tweet.created_at}}</p>
+			<p> <span class="fa fa-heart"></span> {{tweet.favorite_count}} <span class="fa fa-retweet"></span> {{tweet.retweet_count}} retweets</p>
 		</div>
 	</div>
 </body>
