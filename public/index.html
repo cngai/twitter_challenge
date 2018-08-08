@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<link rel="stylesheet" href="./styles.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
 	<script src="./main.js"></script>
 </head>
 
@@ -42,7 +42,16 @@
 			    	</div>
 			 	</div>
 			</div>
-			
+		</div>
+
+		<!-- tweets -->
+		<div class = "row one_tweet" ng-repeat = "tweet in tweets" ng-animate="{enter: 'tweet-enter'}">
+					<img ng-src='{{tweet.user.profile_image_url}}'></img>
+					<h3>{{tweet.user.name}}</h3>
+					
+					<p ng-bind="tweet.text"></p>
+					<p>{{tweet.created_at}}</p>
+					<p> <span class="fa fa-heart"></span> {{tweet.favorite_count}} <span class="fa fa-retweet"></span> {{tweet.retweet_count}} retweets</p>
 		</div>
 	</div>
 </body>
