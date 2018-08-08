@@ -1,13 +1,13 @@
-var tla = angular.module('twitterLittleApp', ['ngAnimate'])
+var tm = angular.module('twitterModule', ['ngAnimate'])
 
 //use post function in routes.js
-tla.service('tService', function($http){
+tm.service('tService', function($http){
 	this.getTweets = function(username) {
 		return $http.post('/tweets', username);
 	};
 });
 
-tla.controller('controller', function($scope, $http, tService) {
+tm.controller('tController', function($scope, $http, tService) {
 	$scope.username = "";		//declare username variable
 
 	// get landing page

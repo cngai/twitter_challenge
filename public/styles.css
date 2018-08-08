@@ -1,61 +1,40 @@
-.title{
-
-}
-
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
-
-.vc {
-  margin: auto;
-  position: absolute;
-  left: 0;  right: 0;
-}
-
-.instruct{
-	text-align: center;
-	width: 60% !important;
-}
-
-.one_tweet{
-	margin-bottom: 10px;
-	margin-top: 10px;
-	border-radius: 0 0 4px 4px;
-	position:relative;
-}
-
-/* ngAnimate CSS-based animations */
-.one_tweet.ng-enter {
-  /* standard transition code */
-  transition: 1s linear all;
-  opacity:0;
-}
-.one_tweet.ng-enter-stagger {
-  /* this will have a 100ms delay between each successive leave animation */
-  transition-delay: 0.1s;
-
-  /* As of 1.4.4, this must always be set: it signals ngAnimate
-    to not accidentally inherit a delay property from another CSS class */
-  transition-duration: 0s;
-}
-.one_tweet.ng-enter.ng-enter-active {
-  /* standard transition styles */
-  opacity:1;
-}
-
 body {
-  background-color: #E3FAFF;
-  opacity: 75%;
-  text-align: center;
+	background-color: #fffefa;
 }
 
-@media (min-width: 650px){
-
-.instruct{
+.header {
 	text-align: center;
-	width: 385px !important;
+	/*border:1px solid red;*/
 }
 
+.parent {
+	position: relative;
+	bottom: 150px;
+}
+
+.title1 {
+	text-align: center;
+	font-size: 90px;
+	font-style: italic;
+	font-family: "Georgia", Times, serif;
+	font-weight: 600;
+	color: #153c5d;
+	margin-bottom: 0;
+}
+
+.title2 {
+	font-size: 75px;
+	font-style: italic;
+	font-family: "Georgia", Times, serif;
+	font-weight: 600;
+	color: #153c5d;
+	line-height: 5%;
+}
+
+.icon {
+	height: 130px;
+	width: 130px;
+	position: relative;
+	top: 15px;
+	right: 310px;
 }
