@@ -1,5 +1,14 @@
 var tm = angular.module('twitterModule', ['ngAnimate'])
 
+//use moment.js to parse twitter api datestamp
+tm.filter('parseDate', function () {
+    return function (date, momentFn) {
+	    var args = Array.prototype.slice.call(arguments, 2);
+	    var momentObj = moment(date);
+	    return momentObj[momentFn].apply(momentObj, args);
+	};
+})
+
 //use post function in routes.js
 tm.service('tService', function($http){
 	this.getTweets = function(username) {

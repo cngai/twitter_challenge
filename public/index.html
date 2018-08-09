@@ -14,6 +14,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
 	<script src="./main.js"></script>
 </head>
 
@@ -53,7 +54,7 @@
 			<p class="tweet-name">{{tweet.user.name}}</p>
 			
 			<p ng-bind="tweet.text"></p>
-			<p>{{tweet.created_at}}</p>
+			<p class="tweet-date">{{tweet.created_at | parseDate :'fromNow'}}</p>
 			<p> <span class="fa fa-heart"></span> {{tweet.favorite_count}} <span class="fa fa-retweet"></span> {{tweet.retweet_count}} retweets</p>
 		</div>
 	</div>
