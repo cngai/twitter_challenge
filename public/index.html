@@ -51,10 +51,10 @@
 				<rect width="7" height="48" style="fill:rgb(182, 42, 55)">
 			</svg>
 			<img class="avi" ng-src='{{tweet.user.profile_image_url}}'>
-			<p class="tweet-name">{{tweet.user.name}}</p>
+			<p class="tweetName">{{tweet.user.name}}</p>
+			<p class="tweetDate">{{tweet.created_at | parseDate :'fromNow'}}</p>
 			
 			<p ng-bind="tweet.text"></p>
-			<p class="tweet-date">{{tweet.created_at | parseDate :'fromNow'}}</p>
 			<p> <span class="fa fa-heart"></span> {{tweet.favorite_count}} <span class="fa fa-retweet"></span> {{tweet.retweet_count}} retweets</p>
 		</div>
 	</div>
