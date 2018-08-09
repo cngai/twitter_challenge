@@ -45,9 +45,12 @@
 		</div>
 
 		<!-- tweets -->
-		<div class = "row tweetInfo" ng-repeat = "tweet in tweets">
-			<img ng-src='{{tweet.user.profile_image_url}}'></img>
-			<h3>{{tweet.user.name}}</h3>
+		<div class="row tweetInfo" ng-repeat="tweet in tweets">
+			<svg width="10" height="48">
+				<rect width="7" height="48" style="fill:rgb(182, 42, 55)">
+			</svg>
+			<img class="avi" ng-src='{{tweet.user.profile_image_url}}'>
+			<p class="tweet-name">{{tweet.user.name}}</p>
 			
 			<p ng-bind="tweet.text"></p>
 			<p>{{tweet.created_at}}</p>
