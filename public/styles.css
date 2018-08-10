@@ -4,7 +4,6 @@ body {
 
 .header {
 	text-align: center;
-	/* border: 1px solid red; */
 }
 
 .title {
@@ -77,8 +76,11 @@ body {
 
 .tweetInfo {
 	margin: auto;
-    width: 650px;
-    border: 1px solid red;
+    width: 610px;
+    height: auto;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 60px;
 }
 
 /* ngAnimate animations */
@@ -114,9 +116,8 @@ body {
 	word-spacing: 3px;
 	font-style: italic;
 	text-transform: uppercase;
-	position: relative;
-	bottom: 71px;
-	left: 70px;
+	margin-bottom: 0px;
+	line-height: 115%;
 }
 
 .tweetDate {
@@ -129,18 +130,36 @@ body {
 	word-spacing: 3px;
 	text-transform: uppercase;
 	position: relative;
-	bottom: 92px;
-	left: 73px;
+	left: 5px;
 }
 
 .tweetText {
-	font-size: 14px;
 	font-family: Helvetica, Arial, sans-serif;
-	color: #153c5d;
-	font-weight: 500;
 	letter-spacing: 5px;
 	position: relative;
-	bottom: 100px;
-	left: 73px;
+	left: 65px;
+}
+
+.tweetBox {
 	width: 500px;
+	position: relative;
+	left: 10px;
+}
+
+.aviBox {
+	float: left;
+	height: 50px;
+}
+
+.tweet-words {
+	color: #153c5d;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.fav-retweet {
+	color: #b62a37;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 12px;
 }
